@@ -1,0 +1,9 @@
+export { default as benny } from './benny.png';
+export { default as andrea } from './andrea.png';
+export { default as shilpa } from './shilpa.png';
+export { default as vijay } from './vijay.png';
+export { default as user1 } from './user1.png';
+export { default as user2 } from './user3.png';
+export { default as user3 } from './user3.png';
+export { default as us } from './us.png';
+export { default as italy } from './italy.png';

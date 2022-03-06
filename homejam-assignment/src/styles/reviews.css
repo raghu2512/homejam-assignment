@@ -1,0 +1,126 @@
+.reviews {
+  padding: 30px 0;
+}
+
+.review__header {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0 85px;
+  margin-bottom: 15px;
+}
+
+.review__header h2 {
+  font-family: Libre Baskerville;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.review__header h2::before {
+  content: "";
+  position: absolute;
+  top: 75px;
+  left: 85px;
+  right: 0;
+  bottom: 15px;
+  width: 48px;
+  background: #0259eb;
+}
+
+.review {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.review__card {
+  position: relative;
+  margin: 15px;
+}
+
+.review__card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  border: 2px solid #e5af56;
+  width: 350px;
+  height: 230px;
+  padding: 0 20px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px rgb(0 0 0 / 25%);
+  z-index: 2;
+  position: relative;
+  background-color: #0a0b1a;
+  transform: translate(-8px, 8px);
+}
+
+.review__detail {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.review__detail img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.review__content {
+  padding: 0 20px;
+}
+
+.review__title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+}
+
+.country img {
+  width: 24px;
+  height: 15px;
+  object-fit: cover;
+  border-radius: 1px;
+}
+
+.country span {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: Rubik;
+  font-weight: normal;
+  line-height: 16px;
+  color: #e5c558;
+  margin: 0 8px;
+}
+
+.review__card-front p {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  padding: 0 5px;
+}
+
+.review__card-back {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(143.63deg, #276c73 5.43%, #5293e8 110.6%);
+  z-index: 0;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 400px) {
+  .review__card-front {
+    width: 300px;
+  }
+}

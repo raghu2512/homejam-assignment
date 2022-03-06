@@ -1,0 +1,84 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 10;
+}
+
+.logoImage {
+  width: 86px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  margin: 0px 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.navbar__smallscreen {
+  display: none;
+}
+
+.navbar__smallscreen_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0a0b1a;
+  transition: 0.5s ease;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.navbar__smallscreen_overlay .overlay__close {
+  font-size: 27px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.navbar__smallscreen-list {
+  list-style: none;
+}
+
+.smallscreen__listItem {
+  margin: 2rem;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  transition: 0.5s ease;
+}
+
+.smallscreen__listItem:hover {
+  color: blueviolet;
+}
+
+@media screen and (max-width: 850px) {
+  .list {
+    display: none;
+  }
+
+  .navbar__smallscreen {
+    display: flex;
+  }
+}
